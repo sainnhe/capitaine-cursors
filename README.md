@@ -9,6 +9,14 @@
 
 This is my fork of [capitaine-cursors](https://github.com/keeferrourke/capitaine-cursors), patched with some additional variants (Gruvbox, Nord, Palenight).
 
+## Installation
+
+### Linux
+
+For Arch Linux users, you can install this theme from [AUR](https://aur.archlinux.org/packages/capitaine-cursors-sainnhe-git).
+
+For other Linux distros, download "Linux.zip" from [release page](https://github.com/sainnhe/capitaine-cursors/releases) and extract it, then copy the folders into `~/.icons` or `~/.local/share/icons`.
+
 ## Build from source
 
 Make sure you have the following executables in `$PATH`:
