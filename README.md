@@ -11,6 +11,10 @@ This is my fork of [capitaine-cursors](https://github.com/keeferrourke/capitaine
 
 ## Installation
 
+### Windows
+
+Download "Windows.zip" from [release page](https://github.com/sainnhe/capitaine-cursors/releases) and extract it, right click `Install.inf` and select "Install".
+
 ### Linux
 
 For Arch Linux users, you can install this theme from [AUR](https://aur.archlinux.org/packages/capitaine-cursors-sainnhe-git).
