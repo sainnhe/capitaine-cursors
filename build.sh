@@ -7,7 +7,7 @@ SRC=$PWD/src
 DIST=$PWD/dist
 VARIANTS=('dark' 'light')
 PLATFORMS=('unix' 'win32')
-STYLES=('macOS' 'Nord' 'Gruvbox' 'Palenight')
+STYLES=('Default' 'Nord' 'Gruvbox' 'Palenight')
 BUILD_DIR=$PWD/_build
 SPECS="$SRC/config"
 ALIASES="$SRC/cursor-aliases"
@@ -163,11 +163,11 @@ function render {
 #
 # Args:
 #  $1 = dark, light
-#  $2 = macOS, Nord, Gruvbox, Palenight
+#  $2 = Default, Nord, Gruvbox, Palenight
 #
 function assemble-unix {
   variant="$1"
-  if [ "$2" != "macOS" ]; then
+  if [ "$2" != "Default" ]; then
     _style=" ($2)"
   else
     _style=""
@@ -222,12 +222,12 @@ function assemble-unix {
 #
 # Args:
 #  $1 = dark, light
-#  $2 = macOS, Nord, Gruvbox, Palenight
+#  $2 = Default, Nord, Gruvbox, Palenight
 #  $3 = 2, 3, 4, 5, 6, 10
 #
 function assemble-win32 {
   variant="$1"
-  if [ "$2" != "macOS" ]; then
+  if [ "$2" != "Default" ]; then
     _style=" ($2)"
   else
     _style=""
@@ -335,7 +335,7 @@ done
 POSITIONAL_ARGS=()
 VARIANT="${VARIANTS[0]}"    # Default = dark
 PLATFORM="${PLATFORMS[0]}"  # Default = unix
-STYLE="${STYLES[0]}"        # Default = macOS
+STYLE="${STYLES[0]}"        # Default = Default
 MAX_DPI=${DPIS[1]}          # Default = tv
 while [[ $# -gt 0 ]]; do
   opt="$1"
