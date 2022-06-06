@@ -24,7 +24,7 @@ This cursor pack aims to support all [named pixel densities][named-dpi].
 
 ## Building from source
 
-Building from source can take a really long time, depending on the max specified DPI. 
+Building from source can take a really long time, depending on the max specified DPI.
 Pre-built packages are available for download.
 
 That said, you'll find everything you need to build and modify this cursor set in the `src/` directory.
@@ -48,14 +48,14 @@ The freshly compiled cursor theme will be located in the `dist/` folder.
 
 The script has a few options described below:
 
-| Option | Values                                           | Description                     |
-| :----- | :----------------------------------------------- | :------------------------------ |
-| `-p`   | `unix`, `win32`                                  | Build for BSD/Linux, or Windows |
-| `-t`   | `dark`, `light`                                  | Choose the variant to build     |
-| `-s`   | `macOS`, `Nord`, `Gruvbox`, `Everforest`, `Edge` | Choose the style to build       |
-| `-d`   | See DPIs                                         | Set the max DPI to render       |
+| Option | Values                                  | Description                     |
+| :----- | :-------------------------------------- | :------------------------------ |
+| `-p`   | `unix`, `win32`                         | Build for BSD/Linux, or Windows |
+| `-t`   | `dark`, `light`                         | Choose the variant to build     |
+| `-s`   | `macOS`, `Nord`, `Gruvbox`, `Palenight` | Choose the style to build       |
+| `-d`   | See DPIs                                | Set the max DPI to render       |
 
-<small>*Note: building the win32 cursors from source is not currently supported, but it is on the roadmap.</small>
+<small>\*Note: building the win32 cursors from source is not currently supported, but it is on the roadmap.</small>
 
 ## Pre-built binaries
 
@@ -102,10 +102,10 @@ pacman -S capitaine-cursors
 
 The Windows build comes with an INF file to make installation easy.
 
- 1. Open `.windows/` in Explorer, and right click on `install.inf`.
- 2. Click 'Install' from the context menu, and authorise the modifications to your system.
- 3. Open `Control Panel` > `Personalisation and Appearance` > `Change mouse pointers`, and select Capitaine cursors.
- 4. Click 'Apply'.
+1.  Open `.windows/` in Explorer, and right click on `install.inf`.
+2.  Click 'Install' from the context menu, and authorise the modifications to your system.
+3.  Open `Control Panel` > `Personalisation and Appearance` > `Change mouse pointers`, and select Capitaine cursors.
+4.  Click 'Apply'.
 
 ## License
 
@@ -115,7 +115,7 @@ Capitaine cursors is LGPLv3. See COPYING for more details.
 
 ## Donations
 
-If you like this cursor theme and want to support me, please consider [donating](https://paypal.me/keeferrourke). 
+If you like this cursor theme and want to support me, please consider [donating](https://paypal.me/keeferrourke).
 
 ## Preview
 

@@ -7,13 +7,13 @@ SRC=$PWD/src
 DIST=$PWD/dist
 VARIANTS=('dark' 'light')
 PLATFORMS=('unix' 'win32')
-STYLES=('macOS' 'Nord' 'Gruvbox' 'Everforest' 'Edge')
+STYLES=('macOS' 'Nord' 'Gruvbox' 'Palenight')
 BUILD_DIR=$PWD/_build
 SPECS="$SRC/config"
 ALIASES="$SRC/cursor-aliases"
 SIZES=('1' '1.25' '1.5' '2' '2.5' '3' '4' '5' '6' '10')
 DPIS=('lo' 'tv' 'hd' 'xhd' 'xxhd' 'xxxhd')
-SVG_DIM=24
+SVG_DIM=32
 SVG_DPI=96
 
 # Truncates $SIZES based on the specified max DPI.
@@ -163,7 +163,7 @@ function render {
 #
 # Args:
 #  $1 = dark, light
-#  $2 = macOS, Nord, Gruvbox, Everforest, Edge
+#  $2 = macOS, Nord, Gruvbox, Palenight
 #
 function assemble-unix {
   variant="$1"
@@ -222,7 +222,7 @@ function assemble-unix {
 #
 # Args:
 #  $1 = dark, light
-#  $2 = macOS, Nord, Gruvbox, Everforest, Edge
+#  $2 = macOS, Nord, Gruvbox, Palenight
 #  $3 = 2, 3, 4, 5, 6, 10
 #
 function assemble-win32 {
@@ -263,6 +263,7 @@ function assemble-win32 {
   mkdir -p "$OUTPUT_DIR/Working"
   cp $BUILD_DIR/$variant/x${3}/progress*.png "$OUTPUT_DIR/Working/"
 
+  # TODO: .cur files
   # convert "$BUILD_DIR/$variant/x${3}/right_ptr.png" "icon:$OUTPUT_DIR/Alternate.cur"
   # convert "$BUILD_DIR/$variant/x${3}/size_fdiag.png" "icon:$OUTPUT_DIR/Diagonal Resize 1.cur"
   # convert "$BUILD_DIR/$variant/x${3}/size_bdiag.png" "icon:$OUTPUT_DIR/Diagonal Resize 2.cur"
@@ -424,53 +425,29 @@ elif [ "$STYLE" == "Gruvbox" ]; then
     -e 's/#fdcf01/#fabd2f/g' \
     -e 's/#959595/#928374/g' \
     src/svg/*/*
-elif [ "$STYLE" == "Everforest" ]; then
-  sed -i \
-    -e 's/#fff/#f8f0dc/g' \
-    -e 's/#fefefe/#f8f0dc/g' \
-    -e 's/#1a1a1a/#323d43/g' \
-    -e 's/#18c087/#83c092/g' \
-    -e 's/#f67400/#e69875/g' \
-    -e 's/#3daee9/#7fbbb3/g' \
-    -e 's/#11d116/#a7c080/g' \
-    -e 's/#ed1515/#e67e80/g' \
-    -e 's/#ff645d/#e67e80/g' \
-    -e 's/#ff4332/#e67e80/g' \
-    -e 's/#fbb114/#e69875/g' \
-    -e 's/#ff9508/#e69875/g' \
-    -e 's/#ca70e1/#d699b6/g' \
-    -e 's/#b452cb/#d699b6/g' \
-    -e 's/#14adf6/#7fbbb3/g' \
-    -e 's/#1191f4/#7fbbb3/g' \
-    -e 's/#52cf30/#a7c080/g' \
-    -e 's/#3bbd1c/#a7c080/g' \
-    -e 's/#ffd305/#dbbc7f/g' \
-    -e 's/#fdcf01/#dbbc7f/g' \
-    -e 's/#959595/#859289/g' \
-    src/svg/*/*
-elif [ "$STYLE" == "Edge" ]; then
+elif [ "$STYLE" == "Palenight" ]; then
   sed -i \
     -e 's/#fff/#e8ebf0/g' \
     -e 's/#fefefe/#e8ebf0/g' \
-    -e 's/#1a1a1a/#363a4e/g' \
-    -e 's/#18c087/#6cb6eb/g' \
-    -e 's/#f67400/#d38aea/g' \
-    -e 's/#3daee9/#6cb6eb/g' \
-    -e 's/#11d116/#a0c980/g' \
-    -e 's/#ed1515/#ec7279/g' \
-    -e 's/#ff645d/#ec7279/g' \
-    -e 's/#ff4332/#ec7279/g' \
-    -e 's/#fbb114/#deb974/g' \
-    -e 's/#ff9508/#deb974/g' \
-    -e 's/#ca70e1/#d38aea/g' \
-    -e 's/#b452cb/#d38aea/g' \
-    -e 's/#14adf6/#6cb6eb/g' \
-    -e 's/#1191f4/#6cb6eb/g' \
-    -e 's/#52cf30/#5dbbc1/g' \
-    -e 's/#3bbd1c/#5dbbc1/g' \
-    -e 's/#ffd305/#a0c980/g' \
-    -e 's/#fdcf01/#a0c980/g' \
-    -e 's/#959595/#7a819d/g' \
+    -e 's/#1a1a1a/#3a3f58/g' \
+    -e 's/#18c087/#c3e88d/g' \
+    -e 's/#f67400/#89ddff/g' \
+    -e 's/#3daee9/#82aaff/g' \
+    -e 's/#11d116/#c3e88d/g' \
+    -e 's/#ed1515/#ff5370/g' \
+    -e 's/#ff645d/#ff5370/g' \
+    -e 's/#ff4332/#ff5370/g' \
+    -e 's/#fbb114/#f78c6c/g' \
+    -e 's/#ff9508/#f78c6c/g' \
+    -e 's/#ca70e1/#c792ea/g' \
+    -e 's/#b452cb/#c792ea/g' \
+    -e 's/#14adf6/#82aaff/g' \
+    -e 's/#1191f4/#82aaff/g' \
+    -e 's/#52cf30/#c3e88d/g' \
+    -e 's/#3bbd1c/#c3e88d/g' \
+    -e 's/#ffd305/#ffcb6b/g' \
+    -e 's/#fdcf01/#ffcb6b/g' \
+    -e 's/#959595/#717cb4/g' \
     src/svg/*/*
 fi
 
