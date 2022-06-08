@@ -13,7 +13,10 @@ This is my fork of [capitaine-cursors](https://github.com/keeferrourke/capitaine
 
 ### Windows
 
-Download "Windows.zip" from [release page](https://github.com/sainnhe/capitaine-cursors/releases) and extract it, right click `Install.inf` and select "Install".
+1. Download "Windows.zip" from [release page](https://github.com/sainnhe/capitaine-cursors/releases) and extract it.
+2. Navigate to Start > Settings > System > Display, check the scale of your display.
+3. If it's 100%, right click `Install_1x.inf` and select "Install".
+4. If it's 150% or above, right click `Install.inf` and select "Install".
 
 ### Linux
 
