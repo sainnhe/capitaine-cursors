@@ -465,4 +465,6 @@ elif [ "$PLATFORM" == "win32" ]; then
   assemble-win32 "$VARIANT" "$STYLE" "$SIZE"
 fi
 
+git checkout -- src
+
 exit 0
