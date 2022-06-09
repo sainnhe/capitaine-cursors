@@ -323,7 +323,7 @@ function validate_option {
 }
 
 # Check dependencies are present.
-DEPENDENCIES=(inkscape xcursorgen bc sed)
+DEPENDENCIES=(git inkscape xcursorgen bc sed)
 for dep in "${DEPENDENCIES[@]}"; do
   if ! command -v "$dep" >/dev/null; then
     echo "$dep is not installed, exiting."
@@ -375,6 +375,9 @@ while [[ $# -gt 0 ]]; do
 done
 # Restore positional arguments.
 set -- "${POSITIONAL_ARGS[@]}"
+
+# If you want to remove the shadow
+# git apply no-shadow.diff
 
 # Patch the color palettes
 if [ "$STYLE" == "Nord" ]; then

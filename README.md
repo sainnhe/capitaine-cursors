@@ -28,6 +28,7 @@ For other Linux distros, download "Linux.zip" from [release page](https://github
 
 Make sure you have the following executables in `$PATH`:
 
+- `git`
 - `inkscape`
 - `xcursorgen`
 - `bc`
