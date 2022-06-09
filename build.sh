@@ -391,17 +391,17 @@ if [ "$STYLE" == "Nord" ]; then
     -e 's/#11d116/#8fbcbb/g' \
     -e 's/#ed1515/#bf616a/g' \
     -e 's/#ff645d/#bf616a/g' \
-    -e 's/#ff4332/#bf616a/g' \
+    -e 's/#ff4332/#b24953/g' \
     -e 's/#fbb114/#d08770/g' \
-    -e 's/#ff9508/#d08770/g' \
+    -e 's/#ff9508/#c37056/g' \
     -e 's/#ca70e1/#b48ead/g' \
-    -e 's/#b452cb/#b48ead/g' \
+    -e 's/#b452cb/#a7739e/g' \
     -e 's/#14adf6/#81a1c1/g' \
-    -e 's/#1191f4/#81a1c1/g' \
+    -e 's/#1191f4/#668db4/g' \
     -e 's/#52cf30/#a3be8c/g' \
-    -e 's/#3bbd1c/#a3be8c/g' \
+    -e 's/#3bbd1c/#8eb171/g' \
     -e 's/#ffd305/#ebcb8b/g' \
-    -e 's/#fdcf01/#ebcb8b/g' \
+    -e 's/#fdcf01/#deb96d/g' \
     -e 's/#959595/#616e88/g' \
     src/svg/*/*
 elif [ "$STYLE" == "Gruvbox" ]; then
@@ -415,17 +415,17 @@ elif [ "$STYLE" == "Gruvbox" ]; then
     -e 's/#11d116/#b8bb26/g' \
     -e 's/#ed1515/#fb4934/g' \
     -e 's/#ff645d/#fb4934/g' \
-    -e 's/#ff4332/#fb4934/g' \
+    -e 's/#ff4332/#ee301a/g' \
     -e 's/#fbb114/#fe8019/g' \
-    -e 's/#ff9508/#fe8019/g' \
+    -e 's/#ff9508/#f16d00/g' \
     -e 's/#ca70e1/#d3869b/g' \
-    -e 's/#b452cb/#d3869b/g' \
+    -e 's/#b452cb/#c66a83/g' \
     -e 's/#14adf6/#83a598/g' \
-    -e 's/#1191f4/#83a598/g' \
+    -e 's/#1191f4/#6a9886/g' \
     -e 's/#52cf30/#b8bb26/g' \
-    -e 's/#3bbd1c/#b8bb26/g' \
+    -e 's/#3bbd1c/#abae12/g' \
     -e 's/#ffd305/#fabd2f/g' \
-    -e 's/#fdcf01/#fabd2f/g' \
+    -e 's/#fdcf01/#edac15/g' \
     -e 's/#959595/#928374/g' \
     src/svg/*/*
 elif [ "$STYLE" == "Palenight" ]; then
@@ -439,17 +439,17 @@ elif [ "$STYLE" == "Palenight" ]; then
     -e 's/#11d116/#c3e88d/g' \
     -e 's/#ed1515/#ff5370/g' \
     -e 's/#ff645d/#ff5370/g' \
-    -e 's/#ff4332/#ff5370/g' \
+    -e 's/#ff4332/#f23756/g' \
     -e 's/#fbb114/#f78c6c/g' \
-    -e 's/#ff9508/#f78c6c/g' \
+    -e 's/#ff9508/#ea734f/g' \
     -e 's/#ca70e1/#c792ea/g' \
-    -e 's/#b452cb/#c792ea/g' \
+    -e 's/#b452cb/#b374dd/g' \
     -e 's/#14adf6/#82aaff/g' \
-    -e 's/#1191f4/#82aaff/g' \
+    -e 's/#1191f4/#6391f2/g' \
     -e 's/#52cf30/#c3e88d/g' \
-    -e 's/#3bbd1c/#c3e88d/g' \
+    -e 's/#3bbd1c/#afdb6f/g' \
     -e 's/#ffd305/#ffcb6b/g' \
-    -e 's/#fdcf01/#ffcb6b/g' \
+    -e 's/#fdcf01/#f2b84d/g' \
     -e 's/#959595/#717cb4/g' \
     src/svg/*/*
 fi
