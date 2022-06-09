@@ -376,9 +376,6 @@ done
 # Restore positional arguments.
 set -- "${POSITIONAL_ARGS[@]}"
 
-# If you want to remove the shadow
-# git apply no-shadow.diff
-
 # Patch the color palettes
 if [ "$STYLE" == "Nord" ]; then
   sed -i \
