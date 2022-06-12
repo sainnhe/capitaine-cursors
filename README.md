@@ -26,31 +26,45 @@ For other Linux distros, download "Linux.zip" from [release page](https://github
 
 ## Build from source
 
-Make sure you have the following executables in `$PATH`:
+### Dependencies
 
-- `git`
-- `inkscape`
-- `xcursorgen`
-- `bc`
-- `sed` (GNU Version)
+- [libxcursor](https://xorg.freedesktop.org/releases/individual/lib/)
+- [libx11](https://xorg.freedesktop.org/releases/individual/lib/)
+- [libpng](http://www.libpng.org/pub/png/libpng.html) (<=1.6)
+- [gcc](https://gcc.gnu.org/install/)
+- [make](https://www.gnu.org/software/make/)
+- [nodejs](https://nodejs.org/en/) (<=12.x.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [python](https://www.python.org/downloads/) (<=3.8)
+- [pip3](https://pip.pypa.io/en/stable/installing/)
 
-Clone this repository, cd to the directory and run `./build.sh`.
+### Build
 
+If you want to patch the colors:
+
+```bash
+$ ./patch.sh Nord # One of Nord, Gruvbox, Palenight
 ```
-$ ./build.sh -h
-This script builds the capitaine-cursor theme.
 
-Usage: ./build.sh [ -d DPI ] [ -t VARIANT ] [ -p PLATFORM ] [ -s STYLE ]
-  -h, --help            Print this help
-  -d, --max-dpi         Set the max DPI to render. Higher values take longer.
-                        One of ( lo tv hd xhd xxhd xxxhd ).
-  -t, --type            Specify the build variant. One of ( dark light ).
-  -p, --platform        Specify the build platform. One of ( unix win32 ).
-  -s, --style           Specify the build style. One of ( Default Nord Gruvbox Palenight ).
+To build X11 Cursors:
+
+```bash
+$ make unix
+$ make unix X_SIZES=22          # Only built '22px' pixel-size.
+$ make unix X_SIZES=22 24 32    # Multiple sizes are provided with  ' '(Space)
+```
+
+To build Windows Cursors:
+
+```bash
+$ make windows
+$ make windows WIN_SIZE=32      # Supports only one pixel-size
 ```
 
 ## Credits
 
 This cursor theme is originally designed by [@keeferrourke](https://github.com/keeferrourke).
 
-The new variants are added by [@sainnhe](https://github.com/sainnhe).
+The build source code is based on [ful1e5/apple_cursor](https://github.com/ful1e5/apple_cursor).
+
+The new color variants are added by [@sainnhe](https://github.com/sainnhe).
