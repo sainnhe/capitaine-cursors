@@ -1,0 +1,16 @@
+{
+  "name": "capitaine-cursor",
+  "version": "1.2.3",
+  "description": "Capitaine Cursors.",
+  "main": "index.js",
+  "author": "Kaiz Khatri",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "render:dark": "yarn workspace dark render",
+    "render:light": "yarn workspace light render"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
