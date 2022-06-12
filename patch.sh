@@ -24,6 +24,15 @@ if [ "$1" == "Nord" ]; then
     -e 's/#fdcf01/#d4ae60/g' \
     -e 's/#959595/#616e88/g' \
     svg/*/*/*
+  sed -i \
+    -e 's/Capitaine/Capitaine Nord/' \
+    Makefile
+  sed -i \
+    -e 's/Capitaine/Capitaine Nord/' \
+    bitmapper/packages/*/src/config.ts
+  sed -i \
+    -e 's/Capitaine/Capitaine Nord/' \
+    ./builder/Makefile
 elif [ "$1" == "Gruvbox" ]; then
   sed -i \
     -e 's/#fff/#f2e5bc/g' \
@@ -48,6 +57,15 @@ elif [ "$1" == "Gruvbox" ]; then
     -e 's/#fdcf01/#e0a10d/g' \
     -e 's/#959595/#928374/g' \
     svg/*/*/*
+  sed -i \
+    -e 's/Capitaine/Capitaine Gruvbox/' \
+    Makefile
+  sed -i \
+    -e 's/Capitaine/Capitaine Gruvbox/' \
+    bitmapper/packages/*/src/config.ts
+  sed -i \
+    -e 's/Capitaine/Capitaine Gruvbox/' \
+    ./builder/Makefile
 elif [ "$1" == "Palenight" ]; then
   sed -i \
     -e 's/#fff/#e8e9f0/g' \
@@ -72,4 +90,13 @@ elif [ "$1" == "Palenight" ]; then
     -e 's/#fdcf01/#e8ad40/g' \
     -e 's/#959595/#717cb4/g' \
     svg/*/*/*
+  sed -i \
+    -e 's/Capitaine/Capitaine Palenight/' \
+    Makefile
+  sed -i \
+    -e 's/Capitaine/Capitaine Palenight/' \
+    bitmapper/packages/*/src/config.ts
+  sed -i \
+    -e 's/Capitaine/Capitaine Palenight/' \
+    ./builder/Makefile
 fi
