@@ -7,8 +7,8 @@ SHELL:=/bin/bash
 bitmaps_dir = "../bitmaps"
 
 X_SIZES ?=22 24 28 32 40 48 56 64 72 80 88 96
-WIN_CANVAS_SIZE ?= 96
-WIN_SIZE ?= 72
+WIN_CANVAS_SIZE ?= 144
+WIN_SIZE ?= 144
 
 setup:
 	@python3 -m pip install clickgen --user

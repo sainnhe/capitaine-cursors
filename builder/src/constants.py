@@ -11,7 +11,7 @@ URL = "https://github.com/sainnhe/capitaine-cursors"
 X_DELAY: int = 10
 
 # Windows Cursor
-WIN_DELAY = 1
+WIN_DELAY = 2
 
 X_CURSORS_CFG: Dict[str, Dict[str, int]] = {
     ##########
