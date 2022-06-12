@@ -76,7 +76,7 @@ parser.add_argument(
     "--win-size",
     dest="win_size",
     metavar="INT",
-    default=144,
+    default=96,
     type=int,
     help="Set pixel-size for Windows cursors. (default: %(default)s)",
 )
@@ -87,7 +87,7 @@ parser.add_argument(
     "--win-canvas-size",
     dest="win_canvas_size",
     metavar="INT",
-    default=144,
+    default=96,
     type=int,
     help="Set pixel-size for Windows cursor's canvas. (default: %(default)s)",
 )
