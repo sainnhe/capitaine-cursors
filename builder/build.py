@@ -99,7 +99,7 @@ bitmaps_dir = Path(args.png_dir)
 name = bitmaps_dir.stem
 
 x_out_dir = Path(args.out_dir) / name
-win_out_dir = Path(args.out_dir) / f"{name}-Windows"
+win_out_dir = Path(args.out_dir) / f"{name} Windows"
 
 # Windows Canvas & Cursor sizes
 win_size: int = args.win_size

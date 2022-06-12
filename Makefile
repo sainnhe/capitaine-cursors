@@ -41,7 +41,7 @@ build_light: bitmaps
 # Installation
 .ONESHELL:
 SHELL:=/bin/bash
-THEME_PREFIX = Capitaine
+THEME_PREFIX = "Capitaine"
 
 src := ./themes/
 
