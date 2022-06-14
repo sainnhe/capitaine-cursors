@@ -2,7 +2,6 @@
 
 if [ "$1" == "Nord" ]; then
   sed -i \
-    -e 's/#fff/#e6ebf2/g' \
     -e 's/#fefefe/#e6ebf2/g' \
     -e 's/#1a1a1a/#353b49/g' \
     -e 's/#18c087/#8fbcbb/g' \
@@ -35,7 +34,6 @@ if [ "$1" == "Nord" ]; then
     ./builder/Makefile
 elif [ "$1" == "Gruvbox" ]; then
   sed -i \
-    -e 's/#fff/#f2e5bc/g' \
     -e 's/#fefefe/#f2e5bc/g' \
     -e 's/#1a1a1a/#3c3836/g' \
     -e 's/#18c087/#8ec07c/g' \
@@ -68,7 +66,6 @@ elif [ "$1" == "Gruvbox" ]; then
     ./builder/Makefile
 elif [ "$1" == "Palenight" ]; then
   sed -i \
-    -e 's/#fff/#e8e9f0/g' \
     -e 's/#fefefe/#e8e9f0/g' \
     -e 's/#1a1a1a/#3a3f58/g' \
     -e 's/#18c087/#c3e88d/g' \
