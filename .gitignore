@@ -3,6 +3,7 @@ bitmaps
 themes
 bin
 dist-win32
+.DS_Store
 
 # --------------------------------------------- Python
 
