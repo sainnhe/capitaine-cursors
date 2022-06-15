@@ -2,6 +2,7 @@
 bitmaps
 themes
 bin
+.DS_Store
 
 # --------------------------------------------- Python
 
